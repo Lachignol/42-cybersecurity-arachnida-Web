@@ -18,6 +18,8 @@ This repository contains two tools developed in Go for image manipulation and re
 
 ## Spider
 
+https://github.com/user-attachments/assets/1d0e5b75-461a-469f-94d0-4f20dd524e68
+
 ### Description
 **Spider** is an image web scraper. It allows you to recursively crawl a website to download all images it contains. It supports various image formats (JPG, PNG, BMP, GIF, SVG) and allows control over the recursion depth.
 
@@ -64,6 +66,9 @@ Download with a depth of 3 and save to a specific folder:
 ---
 
 ## Scorpion
+
+
+https://github.com/user-attachments/assets/89146982-f6cb-4353-87cd-47b91dfc8c3e
 
 ### Description
 **Scorpion** is an image metadata analysis tool. It extracts and displays metadata (EXIF, IPTC, XMP, etc.) from image files. It also includes a feature to remove this metadata and an interactive mode (TUI) for navigating and selecting files.
