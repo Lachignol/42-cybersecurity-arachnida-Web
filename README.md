@@ -18,6 +18,10 @@ Ce dépôt contient deux outils développés en Go pour la manipulation et la r�
 
 ## Spider
 
+
+https://github.com/user-attachments/assets/a484cfef-2586-4bd7-82c7-cc975294aaeb
+
+
 ### Description
 **Spider** est un web scraper d'images. Il permet de parcourir un site web de manière récursive pour télécharger toutes les images qu'il contient. Il supporte divers formats d'images (JPG, PNG, BMP, GIF, SVG) et permet de contrôler la profondeur de la recherche récursive.
 
