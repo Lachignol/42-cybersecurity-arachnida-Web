@@ -19,7 +19,10 @@ Ce dépôt contient deux outils développés en Go pour la manipulation et la r�
 ## Spider
 
 
-https://github.com/user-attachments/assets/a484cfef-2586-4bd7-82c7-cc975294aaeb
+
+
+https://github.com/user-attachments/assets/1d0e5b75-461a-469f-94d0-4f20dd524e68
+
 
 
 ### Description
@@ -68,6 +71,10 @@ Télécharger avec une profondeur de 3 et sauvegarder dans un dossier spécifiqu
 ---
 
 ## Scorpion
+
+
+https://github.com/user-attachments/assets/89146982-f6cb-4353-87cd-47b91dfc8c3e
+
 
 ### Description
 **Scorpion** est un outil d'analyse de métadonnées d'images. Il est capable d'extraire et d'afficher les métadonnées (EXIF, IPTC, XMP, etc.) de fichiers images. Il inclut également une fonctionnalité pour supprimer ces métadonnées et un mode interactif (TUI) pour naviguer et sélectionner des fichiers.
