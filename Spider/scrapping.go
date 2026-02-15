@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"errors"
 	"fmt"
 	"golang.org/x/net/html"
@@ -122,23 +121,32 @@ func download_images(currentNode *html.Node, baseUrl *url.URL, downloadDirectory
 }
 
 func writeImgFile(absolutePath string, downloadDirectory string) {
-	var nameOfFile bytes.Buffer
-	nameOfFile.WriteString(downloadDirectory)
-	nameOfFile.WriteString(path.Base(absolutePath))
-	f, err := os.Create(nameOfFile.String())
+	fileName := path.Base(absolutePath)
+	filePath := filepath.Join(downloadDirectory, fileName)
+
+	f, err := os.Create(filePath)
 	if err != nil {
-		log.Fatal(err)
+		log.Printf("Error creating file %s: %v\n", filePath, err)
+		return
 	}
 	defer f.Close()
+
 	resp, err := http.Get(absolutePath)
 	if err != nil {
-		fmt.Println("content-type:", resp.Header.Get("Content-Type"))
-		log.Fatal(err)
+		log.Printf("Error downloading %s: %v\n", absolutePath, err)
+		return
 	}
 	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		log.Printf("Bad status for %s: %s\n", absolutePath, resp.Status)
+		return
+	}
+
 	_, err = io.Copy(f, resp.Body)
 	if err != nil {
-		log.Fatal(err)
+		log.Printf("Error writing file %s: %v\n", filePath, err)
+		return
 	}
 }
 
