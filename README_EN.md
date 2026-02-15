@@ -60,7 +60,7 @@ Recursively download images from a site with default depth (5):
 
 Download with a depth of 3 and save to a specific folder:
 ```bash
-./spider -r -l 3 -p ./my_images/ http://example.com
+./spider -r -l 3 -p my_images http://example.com
 ```
 
 ---
