@@ -65,7 +65,7 @@ Télécharger récursivement les images d'un site avec une profondeur par défau
 
 Télécharger avec une profondeur de 3 et sauvegarder dans un dossier spécifique :
 ```bash
-./spider -r -l 3 -p ./mes_images/ http://exemple.com
+./spider -r -l 3 -p mes_images http://exemple.com
 ```
 
 ---
